@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My new movie finder | Winc Assignment</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-movie-finder">
+            <h1>The movie finder</h1>
+  
+              <nav class="movie-finder-radio">
+                
+                <label for="latest-movie-filter">
+                    <input type="radio" name="movie-filter" id="latest-movie-filter" value="latest-movie">
+                 Movies from 2014 or later 
+                </label>
+
+                <label for="Avengers-movie-filter">
+                    <input type="radio" name="movie-filter" id="Avengers-movie-filter" value="avengers-movie">
+                The Avengers 
+                </label>
+                
+                <label for="X-men-movie-filter">
+                    <input type="radio" name="movie-filter" id="X-men-movie-filter" value="x-men-movie">
+                X-men 
+                </label>
+                
+                <label for="Princess-movie-filter">
+                    <input type="radio" name="movie-filter" id="Princess-movie-filter" value="princess-movie">
+                Movies with the Princess 
+                </label>
+                
+                <label for="Batman-movie-filter">
+                    <input type="radio" name="movie-filter" id="Batman-movie-filter" value="batman-movie">
+                Batman movie 
+                </label>
+              
+              </nav>
+  
+              <div id="movie-filter-container">
+                <ul id="movie-filter-list">
+  
+                </ul>
+              </div>
+  
+          </div>
+  
+          <footer>
+            <p>
+              We get a lot of information from the following sites:
+            </p>
+            <button id="btn-filter-imdb"> IMDB </button>
+            <button id="btn-filter-winc"> Winc Academy </button>
+            
+          </footer>
+        
+        <script src="moviesDB.js" async defer></script>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
